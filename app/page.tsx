@@ -1,3 +1,9 @@
+import { SearchGym } from "@/components/searchGym/searchGym"
+
 export default function Home() {
-  return <div className="p-4"></div>
+  return (
+    <main>
+      <SearchGym />
+    </main>
+  )
 }
