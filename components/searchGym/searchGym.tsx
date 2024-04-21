@@ -4,6 +4,7 @@ import Image from "next/image"
 import IconHour from "@/public/images/icon-hour.png"
 import { Card } from "../card/card"
 import { UseSearchGym } from "@/lib/useSearchGym"
+import { Legends } from "../legends/legends"
 
 export function SearchGym() {
   const {
@@ -22,7 +23,7 @@ export function SearchGym() {
             <h1 className="text-2xl my-5">Qual período quer treinar</h1>
             <div className="flex justify-between items-center my-4">
               <button
-                className="bg-yellow-400 py-2 w-20 font-semibold rounded-md"
+                className="bg-yellow-400 py-2 w-20 font-semibold rounded-md hover:bg-yellow-400/70"
                 onClick={() => handlePeriodClick("Manhã")}
               >
                 Manhã
@@ -32,7 +33,7 @@ export function SearchGym() {
 
             <div className="flex justify-between items-center my-4">
               <button
-                className="bg-yellow-400 py-2 w-20 font-semibold rounded-md"
+                className="bg-yellow-400 py-2 w-20 font-semibold rounded-md hover:bg-yellow-400/70"
                 onClick={() => handlePeriodClick("Tarde")}
               >
                 Tarde
@@ -42,7 +43,7 @@ export function SearchGym() {
 
             <div className="flex justify-between items-center my-4">
               <button
-                className="bg-yellow-400 py-2 w-20 font-semibold rounded-md"
+                className="bg-yellow-400 py-2 w-20 font-semibold rounded-md hover:bg-yellow-400/70"
                 onClick={() => handlePeriodClick("Noite")}
               >
                 Noite
@@ -54,7 +55,7 @@ export function SearchGym() {
           <div className="flex justify-center gap-3">
             <button
               onClick={filterClosedUnits}
-              className="bg-yellow-400 py-2 w-48 sm:w-56 font-semibold rounded-md"
+              className="bg-yellow-400 py-2 w-48 sm:w-56 font-semibold rounded-md hover:bg-yellow-400/70"
             >
               Exibir unidades fechadas
             </button>
@@ -66,7 +67,10 @@ export function SearchGym() {
             </button>
           </div>
         </div>
-      
+
+        {/* legendas */}
+        <Legends />
+
         {/* Card de visualização dos dados das academias */}
         <Card filteredLocations={filteredLocations} />
       </div>
