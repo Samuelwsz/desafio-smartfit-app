@@ -14,5 +14,11 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Dependencies
 
-https://github.com/bioritmo/front-end-code-challenge-smartsite/blob/master/README.md
+### Nextjs
+### Tailwindcss
+### Typescript
+### axios
+
+## [Challenge](https://github.com/bioritmo/front-end-code-challenge-smartsite/blob/master/README.md)
